@@ -11,8 +11,9 @@
 		354ED0EA2AB3BB150098583A /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 354ED0E92AB3BB150098583A /* ContentView.swift */; };
 		354ED0EC2AB3BB160098583A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 354ED0EB2AB3BB160098583A /* Assets.xcassets */; };
 		354ED0F02AB3BB160098583A /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 354ED0EF2AB3BB160098583A /* Preview Assets.xcassets */; };
-		354ED0F92AB3BB8D0098583A /* CompModel.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 354ED0F72AB3BB8D0098583A /* CompModel.xcdatamodeld */; };
+		354ED0F92AB3BB8D0098583A /* FoodModel.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 354ED0F72AB3BB8D0098583A /* FoodModel.xcdatamodeld */; };
 		354ED0FB2AB3C1B40098583A /* DataController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 354ED0FA2AB3C1B40098583A /* DataController.swift */; };
+		354ED1052AB521840098583A /* AddFoodView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 354ED1042AB521840098583A /* AddFoodView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,7 @@
 		354ED0EF2AB3BB160098583A /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		354ED0F82AB3BB8D0098583A /* CompModel.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = CompModel.xcdatamodel; sourceTree = "<group>"; };
 		354ED0FA2AB3C1B40098583A /* DataController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataController.swift; sourceTree = "<group>"; };
+		354ED1042AB521840098583A /* AddFoodView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddFoodView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,7 +60,8 @@
 			children = (
 				354ED0F62AB3BB6D0098583A /* DataModel */,
 				354ED0E72AB3BB150098583A /* CompIRLApp.swift */,
-				354ED0E92AB3BB150098583A /* ContentView.swift */,
+				354ED1012AB5215D0098583A /* Views */,
+				354ED1032AB5216A0098583A /* Helpers */,
 				354ED0EB2AB3BB160098583A /* Assets.xcassets */,
 				354ED0ED2AB3BB160098583A /* CompIRL.entitlements */,
 				354ED0EE2AB3BB160098583A /* Preview Content */,
@@ -77,10 +80,26 @@
 		354ED0F62AB3BB6D0098583A /* DataModel */ = {
 			isa = PBXGroup;
 			children = (
-				354ED0F72AB3BB8D0098583A /* CompModel.xcdatamodeld */,
+				354ED0F72AB3BB8D0098583A /* FoodModel.xcdatamodeld */,
 				354ED0FA2AB3C1B40098583A /* DataController.swift */,
 			);
 			path = DataModel;
+			sourceTree = "<group>";
+		};
+		354ED1012AB5215D0098583A /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				354ED0E92AB3BB150098583A /* ContentView.swift */,
+				354ED1042AB521840098583A /* AddFoodView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		354ED1032AB5216A0098583A /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Helpers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -153,8 +172,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				354ED0F92AB3BB8D0098583A /* CompModel.xcdatamodeld in Sources */,
+				354ED0F92AB3BB8D0098583A /* FoodModel.xcdatamodeld in Sources */,
 				354ED0FB2AB3C1B40098583A /* DataController.swift in Sources */,
+				354ED1052AB521840098583A /* AddFoodView.swift in Sources */,
 				354ED0EA2AB3BB150098583A /* ContentView.swift in Sources */,
 				354ED0E82AB3BB150098583A /* CompIRLApp.swift in Sources */,
 			);
@@ -368,13 +388,13 @@
 /* End XCConfigurationList section */
 
 /* Begin XCVersionGroup section */
-		354ED0F72AB3BB8D0098583A /* CompModel.xcdatamodeld */ = {
+		354ED0F72AB3BB8D0098583A /* FoodModel.xcdatamodeld */ = {
 			isa = XCVersionGroup;
 			children = (
 				354ED0F82AB3BB8D0098583A /* CompModel.xcdatamodel */,
 			);
 			currentVersion = 354ED0F82AB3BB8D0098583A /* CompModel.xcdatamodel */;
-			path = CompModel.xcdatamodeld;
+			path = FoodModel.xcdatamodeld;
 			sourceTree = "<group>";
 			versionGroupType = wrapper.xcdatamodel;
 		};
