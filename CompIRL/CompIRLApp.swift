@@ -13,7 +13,7 @@ struct CompIRLApp: App {
 
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            AddFoodView()
                 .environment(\.managedObjectContext, dataController.container.viewContext)
         }
     }
