@@ -44,23 +44,30 @@ struct ContentView: View {
                 ToolbarItem(placement: .navigationBarTrailing) {
                     Button {
                         showingAddView.toggle()
+                    } label: {
+                        Label("Adicionar comida", systemImage: "plus.circle")
                     }
                 }
+                ToolbarItem(placement: .navigationBarLeading) {
+                    EditButton()
+                }
+            }.sheet(isPresented: $showingAddView) {
+                AddFoodView()
             }
         }
     }
-}
-
-private func deleteFood(offsets: IndexSet) {
-    //pass
-}
-
-private func totalCaloriesToday() -> Double {
-    return 0.0
-}
-
-struct ContentView_Previews: PreviewProvider {
-    static var previews: some View {
-        ContentView()
+    
+    private func deleteFood(offsets: IndexSet) {
+        //pass
+    }
+    
+    private func totalCaloriesToday() -> Double {
+        return 0.0
+    }
+    
+    struct ContentView_Previews: PreviewProvider {
+        static var previews: some View {
+            ContentView()
+        }
     }
 }
