@@ -12,6 +12,8 @@ struct ContentView: View {
     @Environment(\.managedObjectContext) var managedObjContext
     @FetchRequest(sortDescriptors: [SortDescriptor(\.date, order: .reverse)]) var food: FetchedResults<Food>
     
+    @State private var showingAddView = false
+    
     var body: some View {
         NavigationView{
             VStack(alignment: .leading) {
@@ -22,14 +24,35 @@ struct ContentView: View {
                     ForEach(food) { food in
                         NavigationLink(destination: Text("\(food.calories)")) {
                             HStack {
-                                
+                                VStack(alignment: .leading, spacing: 6){
+                                    Text(food.name!)
+                                        .bold()
+                                    
+                                    Text("\(Int(food.calories))") + Text("calories").foregroundColor(.red)
+                                }
+                                Spacer()
+                                Text(calcTimeSince(date: food.date!))
+                                    .foregroundColor(.gray)
+                                    .italic()
                             }
                         }
+                    }.onDelete(perform: deleteFood)
+                }.listStyle(.plain)
+            }
+            .navigationTitle("compIRL")
+            .toolbar{
+                ToolbarItem(placement: .navigationBarTrailing) {
+                    Button {
+                        showingAddView.toggle()
                     }
                 }
-            }.navigationTitle("compIRL")
+            }
         }
     }
+}
+
+private func deleteFood(offsets: IndexSet) {
+    //pass
 }
 
 private func totalCaloriesToday() -> Double {
