@@ -28,7 +28,7 @@ struct ContentView: View {
                                     Text(food.name!)
                                         .bold()
                                     
-                                    Text("\(Int(food.calories))") + Text("calories").foregroundColor(.red)
+                                    Text("\(Int(food.calories))") + Text(" calories").foregroundColor(.red)
                                 }
                                 Spacer()
                                 Text(calcTimeSince(date: food.date!))
