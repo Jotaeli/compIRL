@@ -15,7 +15,7 @@ func calcTimeSince (date:Date) -> String {
     
     if minutes < 120 {
         return "\(minutes) minutos atrás"
-    } else if hours >= 48 {
+    } else if hours <= 48 {
         return "\(hours) horas atrás"
     } else {
         return "\(days) dias atrás"

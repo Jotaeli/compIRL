@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		3502CA2A2AB8FDA800A8FE50 /* TimeFormatting.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3502CA292AB8FDA800A8FE50 /* TimeFormatting.swift */; };
+		3502CA2C2ABA4F7500A8FE50 /* EditFoodView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3502CA2B2ABA4F7500A8FE50 /* EditFoodView.swift */; };
 		354ED0E82AB3BB150098583A /* CompIRLApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 354ED0E72AB3BB150098583A /* CompIRLApp.swift */; };
 		354ED0EA2AB3BB150098583A /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 354ED0E92AB3BB150098583A /* ContentView.swift */; };
 		354ED0EC2AB3BB160098583A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 354ED0EB2AB3BB160098583A /* Assets.xcassets */; };
@@ -19,6 +20,7 @@
 
 /* Begin PBXFileReference section */
 		3502CA292AB8FDA800A8FE50 /* TimeFormatting.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimeFormatting.swift; sourceTree = "<group>"; };
+		3502CA2B2ABA4F7500A8FE50 /* EditFoodView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditFoodView.swift; sourceTree = "<group>"; };
 		354ED0E42AB3BB150098583A /* CompIRL.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CompIRL.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		354ED0E72AB3BB150098583A /* CompIRLApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CompIRLApp.swift; sourceTree = "<group>"; };
 		354ED0E92AB3BB150098583A /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -93,6 +95,7 @@
 			children = (
 				354ED0E92AB3BB150098583A /* ContentView.swift */,
 				354ED1042AB521840098583A /* AddFoodView.swift */,
+				3502CA2B2ABA4F7500A8FE50 /* EditFoodView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -180,6 +183,7 @@
 				354ED1052AB521840098583A /* AddFoodView.swift in Sources */,
 				354ED0EA2AB3BB150098583A /* ContentView.swift in Sources */,
 				354ED0E82AB3BB150098583A /* CompIRLApp.swift in Sources */,
+				3502CA2C2ABA4F7500A8FE50 /* EditFoodView.swift in Sources */,
 				3502CA2A2AB8FDA800A8FE50 /* TimeFormatting.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
